@@ -24,25 +24,32 @@
 
 <body>
   <div class="max-w-[768px] mx-auto text-[#122939] font-[400] text-[1.4rem]">
-    <header class="px-[4px] py-[8px] text-center bg-[#f2ef5b] rounded-b-[30px]">
-      <h1 class="text-[3.2rem] font-[700]">Welcome!</h1>
+    <header class="p-[20px] rounded-b-[30px] relative z-[10] before:content-[''] before:block before:absolute before:bg-[#f2ef5b] before:right-[0] before:top-[0] before:w-[65%] before:h-[75vw] before:z-[1] before:rounded-bl-[60px] before:animate-[bounce_10s_infinite]">
+      <h1 class="relative z-[10] text-[2.4rem] font-[700] leading-none">
+        <span class="text-[1.2rem]">2023.11.03</span><br>
+        Wedding Party
+      </h1>
     </header>
 
-    <main class="px-[20px] pt-[30px] pb-[50px]">
-      <nav>
-        <ul class="flex gap-[20px] justify-center">
-          <li class="p-[8px] bg-[#065f8e] max-w-[200px] mx-auto rounded-[12px] text-center text-[#fff]">
+    <main class="relative z-[10] pt-[30px]">
+      <h2 class="text-[3rem] font-[700]">
+        お気をつけて<br>お越しください！
+      </h2>
+      
+      <nav class="p-[20px] pt-[20px]">
+        <ul class="grid grid-cols-1 gap-[10px]">
+          <li class="p-[8px] border-2 border-solid border-[#000] max-w-[280px] rounded-[24px] text-center duration-150">
             <a href="#shinbashi" class="block">新橋駅からお越しの方</a>
           </li>
-          <li class="p-[8px] bg-[#065f8e] max-w-[200px] mx-auto rounded-[12px] text-center text-[#fff]">
+          <li class="p-[8px] border-2 border-solid border-[#000] max-w-[280px] rounded-[24px] text-center">
             <a href="#shiodome" class="block">汐留駅からお越しの方</a>
           </li>
         </ul>
       </nav>
 
-      <section class="mt-[50px]">
-        <h2 class="relative font-[700] text-[2.4rem] ml-[15px] before:content-[''] before:block before:bg-[#065f8e] before:w-[1rem] before:h-[100%] before:absolute before:left-[-20px]">Google Map</h2>
-        <div class="mt-[20px]">
+      <section class="p-[20px] mt-[50px] bg-[#f2ef5b] relative z-[10] before:content-[''] before:block before:absolute before:bg-[#fff] before:left-[0] before:top-[0] before:w-[100%] before:h-[35vw] before:z-[1]">
+        <h2 class="relative font-[700] text-[2.4rem] ml-[15px] z-[10] before:content-[''] before:block before:bg-[#065f8e] before:w-[1rem] before:h-[100%] before:absolute before:left-[-20px]">Google Map</h2>
+        <div class="mt-[20px] relative z-[10]">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.509309038804!2d139.75994737663007!3d35.66445937259264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b627be950a1%3A0x1370c39a056acf22!2z44Kw44Op44Oz44OW44Oq44Ko5p2x5Lqs!5e0!3m2!1sja!2sjp!4v1698552788654!5m2!1sja!2sjp"
             width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
@@ -50,78 +57,83 @@
         </div>
       </section>
 
-      <section id="shinbashi" class="mt-[50px]">
-        <h2
-          class="relative font-[700] text-[2.4rem] ml-[15px] before:content-[''] before:block before:bg-[#065f8e] before:w-[1rem] before:h-[100%] before:absolute before:left-[-20px]">
-          新橋駅からの道順</h2>
-        <p class="mt-[20px]">
-          新橋駅からの道順はグランブリエ東京のHPに掲載がございます<br>
-          ページの中程にあります<span class="font-[700]">公共交通でのご来館</span>をクリックして道順をご確認ください
-          <a href="https://grand-briller.tokyo/access" target="_blank"
-            class="block p-[8px] bg-[#065f8e] max-w-[300px] mx-auto mt-[20px] rounded-[12px] text-center text-[#fff]">詳しくはこちら</a>
-        </p>
+      <section id="shinbashi" class="pt-[40px] pb-[20px] pr-[20px] bg-[#f2ef5b]">
+        <div class="bg-[#fff] p-[20px] rounded-r-[12px]">
+          <h2
+            class="relative font-[700] text-[2.4rem] ml-[15px] before:content-[''] before:block before:bg-[#065f8e] before:w-[1rem] before:h-[100%] before:absolute before:left-[-20px]">
+            新橋駅からの道順</h2>
+          <p class="mt-[20px]">
+            新橋駅からの道順はグランブリエ東京のHPに掲載がございます<br>
+            ページの中程にあります<span class="font-[700]">公共交通でのご来館</span>をクリックして道順をご確認ください
+            <a href="https://grand-briller.tokyo/access" target="_blank"
+              class="block p-[8px] bg-[#065f8e] max-w-[300px] mx-auto mt-[20px] rounded-[12px] text-center text-[#fff]">詳しくはこちら</a>
+          </p>
+        </div>
+        
       </section>
 
-      <section id="shiodome" class="mt-[50px]">
-        <h2
-          class="relative font-[700] text-[2.4rem] ml-[15px] before:content-[''] before:block before:bg-[#065f8e] before:w-[1rem] before:h-[100%] before:absolute before:left-[-20px]">
-          汐留駅からの道順</h2>
-        <ol>
-          <li class="mt-[20px]">
-            <h3 class="text-[1.8rem]">1. 電車を降りたら<span class="font-[700]">JR新橋駅方面改札</span>へ向かう</h3>
-            <img src="images/image-1.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
-          </li>
-          <li class="mt-[20px]">
-            <h3 class="text-[1.8rem]">2. 階段をあがってJR新橋駅方面改札に向かう</h3>
-            <img src="images/image-2.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
-          </li>
-          <li class="mt-[20px]">
-            <h3 class="text-[1.8rem]">3. JR新橋駅方面改札を出る</h3>
-            <img src="images/image-3.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
-          </li>
-          <li class="mt-[20px]">
-            <h3 class="text-[1.8rem]">4. 改札を出たら正面の階段をあがる</h3>
-            <img src="images/image-4.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
-          </li>
-          <li class="mt-[20px]">
-            <h3 class="text-[1.8rem]">5. 階段を上がったら<span class="font-[700]">カレッタ汐留 Cゲート</span>へ向かう</h3>
-            <img src="images/image-5.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
-          </li>
-          <li class="mt-[20px]">
-            <h3 class="text-[1.8rem]">6. <span class="font-[700]">カレッタ汐留 Cゲート</span>はここです</h3>
-            <img src="images/image-6.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
-          </li>
-          <li class="mt-[20px]">
-            <h3 class="text-[1.8rem]">7. <span class="font-[700]">カレッタ汐留 Cゲート</span>の自動ドアを通ってビルの中へ</h3>
-            <img src="images/image-7.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
-          </li>
-          <li class="mt-[20px]">
-            <h3 class="text-[1.8rem]">8. <span class="font-[700]">スカイレストラン 直通シャトルエレベーター</span>の看板に従って進む</h3>
-            <img src="images/image-8.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
-            <img src="images/image-10.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
-          </li>
-          <li class="mt-[20px]">
-            <h3 class="text-[1.8rem]">9. <span class="font-[700]">SKY RESTAURANTS</span>の看板に従ってさらに進む</h3>
-            <img src="images/image-9.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
-          </li>
-          <li class="mt-[20px]">
-            <h3 class="text-[1.8rem]">10. <span class="font-[700]">ビアホール だん家</span>の向かいにエレベーターがあります</h3>
-            <img src="images/image-11.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
-          </li>
-          <li class="mt-[20px]">
-            <h3 class="text-[1.8rem]">11. エレベーターに乗って<span class="font-[700]">46F</span>まであがる</h3>
-            <p class="text-[1.4rem] text-[#d30303]">※会場は47Fですが、直通エレベーターでは46Fまでしか上がれません</p>
-            <img src="images/image-12.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
-          </li>
-          <li class="mt-[20px]">
-            <h3 class="text-[1.8rem]">12. <span class="font-[700]">46F</span>でエレベーターを降りる</h3>
-            <img src="images/image-13.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
-          </li>
-          <li class="mt-[20px]">
-            <h3 class="text-[1.8rem]">13. 奥に進み、左手の階段か右手のエレベーターを使って47Fまでお越しください</h3>
-            <img src="images/image-14.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
-          </li>
-        </ol>
+      <section id="shiodome" class="pt-[20px] pb-[50px] pl-[20px] bg-[#f2ef5b]">
+        <div class="bg-[#fff] p-[20px] rounded-l-[12px]">
+          <h2
+            class="relative font-[700] text-[2.4rem] ml-[15px] before:content-[''] before:block before:bg-[#065f8e] before:w-[1rem] before:h-[100%] before:absolute before:left-[-20px]">
+            汐留駅からの道順</h2>
+          <ol>
+            <li class="mt-[20px]">
+              <h3 class="text-[1.8rem]">1. 電車を降りたら<span class="font-[700]">JR新橋駅方面改札</span>へ向かう</h3>
+              <img src="images/image-1.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
+            </li>
+            <li class="mt-[20px]">
+              <h3 class="text-[1.8rem]">2. 階段をあがってJR新橋駅方面改札に向かう</h3>
+              <img src="images/image-2.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
+            </li>
+            <li class="mt-[20px]">
+              <h3 class="text-[1.8rem]">3. JR新橋駅方面改札を出る</h3>
+              <img src="images/image-3.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
+            </li>
+            <li class="mt-[20px]">
+              <h3 class="text-[1.8rem]">4. 改札を出たら正面の階段をあがる</h3>
+              <img src="images/image-4.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
+            </li>
+            <li class="mt-[20px]">
+              <h3 class="text-[1.8rem]">5. 階段を上がったら<span class="font-[700]">カレッタ汐留 Cゲート</span>へ向かう</h3>
+              <img src="images/image-5.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
+            </li>
+            <li class="mt-[20px]">
+              <h3 class="text-[1.8rem]">6. <span class="font-[700]">カレッタ汐留 Cゲート</span>はここです</h3>
+              <img src="images/image-6.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
+            </li>
+            <li class="mt-[20px]">
+              <h3 class="text-[1.8rem]">7. <span class="font-[700]">カレッタ汐留 Cゲート</span>の自動ドアを通ってビルの中へ</h3>
+              <img src="images/image-7.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
+            </li>
+            <li class="mt-[20px]">
+              <h3 class="text-[1.8rem]">8. <span class="font-[700]">スカイレストラン 直通シャトルエレベーター</span>の看板に従って進む</h3>
+              <img src="images/image-8.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
+              <img src="images/image-10.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
+            </li>
+            <li class="mt-[20px]">
+              <h3 class="text-[1.8rem]">9. <span class="font-[700]">SKY RESTAURANTS</span>の看板に従ってさらに進む</h3>
+              <img src="images/image-9.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
+            </li>
+            <li class="mt-[20px]">
+              <h3 class="text-[1.8rem]">10. <span class="font-[700]">ビアホール だん家</span>の向かいにエレベーターがあります</h3>
+              <img src="images/image-11.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
+            </li>
+            <li class="mt-[20px]">
+              <h3 class="text-[1.8rem]">11. エレベーターに乗って<span class="font-[700]">46F</span>まであがる</h3>
+              <p class="text-[1.4rem] text-[#d30303]">※会場は47Fですが、直通エレベーターでは46Fまでしか上がれません</p>
+              <img src="images/image-12.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
+            </li>
+            <li class="mt-[20px]">
+              <h3 class="text-[1.8rem]">12. <span class="font-[700]">46F</span>でエレベーターを降りる</h3>
+              <img src="images/image-13.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
+            </li>
+            <li class="mt-[20px]">
+              <h3 class="text-[1.8rem]">13. 奥に進み、左手の階段か右手のエレベーターを使って47Fまでお越しください</h3>
+              <img src="images/image-14.png" alt="" loading="lazy" width="350" height="262" class="mt-[12px] rounded-[12px]">
+            </li>
+          </ol>
+        </div>
       </section>
     </main>
   </div>
